@@ -1,0 +1,27 @@
+/** Названия и описания категорий проверок. */
+export const CATEGORIES_RU: Readonly<Record<string, { name: string; description: string }>> = {
+  core: { name: 'Основное SEO', description: 'Мета-теги, canonical, H1, директивы индексации, уникальность title' },
+  technical: { name: 'Техническое SEO', description: 'robots.txt, sitemap, SSL, коды ответа и другие технические моменты' },
+  perf: { name: 'Скорость', description: 'Core Web Vitals, сжатие, кеширование, минификация и оптимизация загрузки' },
+  links: { name: 'Ссылки', description: 'Внутренние и внешние ссылки, анкоры, битые ссылки и их качество' },
+  images: { name: 'Изображения', description: 'Атрибуты alt, размеры, ленивая загрузка, форматы и оптимизация' },
+  security: { name: 'Безопасность', description: 'HTTPS, заголовки безопасности, смешанный контент и настройка SSL' },
+  crawl: { name: 'Сканирование', description: 'Sitemap, пагинация, сигналы индексации и настройки обхода' },
+  schema: { name: 'Микроразметка', description: 'Корректность JSON-LD, разметка Schema.org и расширенные сниппеты' },
+  a11y: { name: 'Доступность', description: 'ARIA, контраст, подписи форм, навигация с клавиатуры' },
+  content: { name: 'Контент', description: 'Объём и качество текста, заголовки, читаемость, дубли' },
+  social: { name: 'Соцсети', description: 'Open Graph, Twitter Cards и превью при репостах' },
+  eeat: { name: 'E-E-A-T', description: 'Опыт, экспертность, авторитетность и надёжность: авторы, контакты, политики' },
+  url: { name: 'Адреса URL', description: 'Структура, длина и читаемость адресов страниц' },
+  mobile: { name: 'Мобильная версия', description: 'Viewport, размеры элементов и удобство на телефоне' },
+  i18n: { name: 'Языки и регионы', description: 'Атрибут lang, hreflang и языковые версии' },
+  legal: { name: 'Юридическое', description: 'Согласие на cookie и обязательные документы' },
+  js: { name: 'JavaScript', description: 'Отрисовка на JavaScript: что видит робот без выполнения скриптов' },
+  redirect: { name: 'Редиректы', description: 'Цепочки, циклы и типы перенаправлений' },
+  htmlval: { name: 'HTML-валидность', description: 'Doctype, кодировка, структура head, мусорный текст' },
+  yandex: { name: 'Яндекс', description: 'Сигналы индексации Яндекса: технические домены, Clean-param, директивы robots.txt, Метрика' },
+  bitrix: { name: '1С-Битрикс', description: 'Типичные ошибки настройки 1С-Битрикс: служебные адреса, sessid, дубли с index.php, композит' },
+  // Проверки, сохранённые до разделения раздела на «Яндекс» и «1С-Битрикс»
+  runet: { name: 'Яндекс и Битрикс', description: 'Сигналы индексации Яндекса и типичные ошибки настройки 1С-Битрикс' },
+  geo: { name: 'AI-поиск (GEO)', description: 'Готовность к нейросетевому поиску: доступ AI-ботов, llms.txt, семантика' },
+};
